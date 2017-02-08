@@ -1,0 +1,158 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Cambus</title>
+<link rel="stylesheet" href="css/timeline.css" />
+
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<!-- 모바일용웹 -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- 안드로이드 홈화면추가시 상단 주소창 제거 -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="/mobile/Image/favicon.ico">
+<!-- ios홈화면추가시 상단 주소창 제거 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- ico 아이콘-->
+<link rel="apple-touch-icon" href="/mobile/Image/favicon.ico">
+
+<!--모바일 스플래스 //아이폰용-->
+<link rel="apple-touch-startup-image" href="images/loading_yongin.png">
+
+<script
+	src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<!-- 스크롤 잠금 -->
+
+</head>
+<body>
+	<div id="jb-container">
+		<div id="jb-header">
+			<div id="notice_main"></div>
+		</div>
+		<div id="jb-content">
+			<div id="busData">
+				<div
+					style="position: relative; top: 0; left: 0; width: 100%; height: 30%;">
+					셔틀버스 위치조회 <input type="button"
+						style="position: absolute; right: 6%; width: 8%; height: 100%; background-image: url('images/refreshIcon.png'); background-size: cover; background-repeat: no-repeat; background-color: white; border: 1px solid red;"
+						onclick="location.reload()" />
+				</div>
+				<div id="btnWay">
+					<div class="way">
+						<input type="button" value="터미널 방면"
+							style="background-color: #00dbe9; margin: 0; width: 80%; height: 50%; border: 0px;" />
+					</div>
+					<div class="way">
+						<input type="button" value="용인대 방면"
+							style="background-color: #f29c9f;; margin: 0; width: 80%; height: 50%; border: 0px;" />
+					</div>
+				</div>
+			</div>
+			<div id="lineArea">
+
+				<div class="lineUp">
+					<div class="turnSpace"></div>
+					<div class="stopName">진 입 로</div>
+					<div class="stopSpaceUp"></div>
+
+				</div>
+
+				<div class="lineUp">
+					<div class="turnSpace"></div>
+					<div class="stopName">명지대 사거리</div>
+					<div class="stopSpaceUp"></div>
+
+				</div>
+				<div class="lineUp">
+					<div class="turnSpace"></div>
+					<div class="stopName">중앙 지구대 / 이약국 앞</div>
+					<div class="stopSpaceUp">
+						<div class="busInfo">
+							<img src="images/icon.png" alt="버스아이콘" class="busIcon" />
+							<div class="busNum">45라 4949</div>
+							<div class="remainTime">03:50</div>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="lineUp">
+
+					<div class="turnSpace"></div>
+					<div class="stopName">용인 롯데시네마 / 시내</div>
+					<div class="stopSpaceUp"></div>
+
+				</div>
+
+
+				<div class="lineDown">
+					<div class="turnSpace">
+						<img src="images/turnImg.png" id="turnPointImg">
+					</div>
+					<div class="stopName">용인 버스터미널</div>
+					<div class="stopSpaceTurn"></div>
+
+				</div>
+
+				<div class="lineDown">
+					<div class="turnSpace"></div>
+					<div class="stopName">명지대 사거리</div>
+					<div class="stopSpaceDown"></div>
+
+				</div>
+
+				<div class="lineDown">
+					<div class="turnSpace"></div>
+					<div class="stopName">용인 시청</div>
+					<div class="stopSpaceDown"></div>
+
+				</div>
+
+				<div class="lineDown">
+					<div class="turnSpace"></div>
+					<div class="stopName">진 입 로</div>
+					<div class="stopSpaceDown"></div>
+
+				</div>
+
+				<div class="lineDown">
+					<div class="turnSpace"></div>
+					<div class="stopName">용인대학교</div>
+					<div class="stopSpaceDown"></div>
+
+				</div>
+				<hr>
+
+
+
+
+
+				<div style="clear: both;"></div>
+
+			</div>
+
+
+		</div>
+
+
+
+
+
+		<div id="jb-footer">
+			<div id="chat">FOOTER</div>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+
+
+	</div>
+
+
+
+</body>
+</html>
