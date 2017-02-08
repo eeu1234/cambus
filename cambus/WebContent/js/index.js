@@ -1,5 +1,6 @@
 $(function(){
-$("body").bind('touchmove', function(e){e.preventDefault()}); //스크롤방지
+$(body).bind('touchmove', function(e){e.preventDefault()}); //스크롤방지
+
 	var flag=false;
 	$("#bar_chatting").click(function(){
 		$('#jb-footer').slideDown('slow', function() {
