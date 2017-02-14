@@ -1,16 +1,22 @@
+/* 
+	#EAEAEA : 회색
+
+
+ */
 @font-face {
 	font-family: "notoFont-medium";
-	src: url(../fonts/NotoSansCJKkr-Medium.otf) format("truetype");
+	src: url(../fonts/NotoSansCJKkr-Medium.woff) format("truetype");
 }
 
 @font-face {
 	font-family: "notoFont-bold";
-	src: url(../fonts/NotoSansCJKsc-Bold.otf) format("truetype");
+	src: url(../fonts/NotoSansCJKsc-Bold.woff) format("truetype");
 }
 
-body, html, p {
-	margin: 0;
+body, html, p, hr,span {
+	margin: 0 auto;
 	padding: 0;
+	
 	
 }
 
@@ -18,8 +24,12 @@ body, html {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	
+	
 	font-family: 'notoFont-bold';
 	color: #222;
+	
+	background-color: white;
 	
 	overflow-x:hidden;
 	/* -webkit-overflow-scrolling: touch; 터치부드럽게 상단고정해더가 늦게움직이는현상발생*/ 
@@ -30,22 +40,27 @@ body, html {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	max-width:600px;
 	
+	margin:0 auto;
 }
 
 #header {
 	position: fixed;
 	width: 100%;
-	height: 18%;
-	z-index: 1;
-	border-bottom:2px solid #444;
+	height: 26%;
+	z-index: 2;
+	
+	max-width:600px;
+	background-color: #EAEAEA;
+	box-shadow : 1px 1px 17px 5px silver;
 }
 
 #header #busData {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	z-index:2;
+	z-index:1;
 }
 
 #header #busData #title { /*셔틀버스 위치조회*/
@@ -63,12 +78,11 @@ body, html {
 #header #busData #btnWay { /*상행 하행 버튼 틀*/
 	position: relative;
 	width: 100%;
-	height: 60%;
+	height: 50%;
 	margin: 0 auto;
 	text-align: center;
 	
-	z-index:2;
-	
+
 }
 
 #header #busData #btnWay .way { /*상행 하행 버튼 각각틀*/
@@ -178,47 +192,49 @@ body, html {
 /*버스 아이콘 */
 .busInfo{
 	position:absolute;
-	top:60%; /* 여기 밀면  버스 icon 중간 지점으로 보낼수있습니다 60%가 중간 */
+	top:65%; /* 여기 밀면  버스 icon 중간 지점으로 보낼수있습니다 65%가 중간 */
 	left:0;
 	width: 95%;
 	height: 95%;
-	border:1px solid red;
 	z-index:1;
 	text-align:left;
+/* 	border:1px solid red; */
 }
 .busIcon {/*버스 아이콘*/
 	position:relative;
-	width: 35%;
+	width: 30%;
 	height: 65%;
-	border:1px solid green;
+	margin-left:4%;
+	/* border:1px solid green; */
 	
 }
 
 .busNum{
 	/*차 번호 공간*/
-	position:relative;
+	position:absolute;
 	margin:0;
-	width: 60%;
+	width: 45%;
 	height: 30%;
-	text-align:left;
-	border:1px solid blue;
+	text-align:center;
 	font-size:0.5em;
+	bottom:0;
+/* 	border:1px solid blue; */
 	
 }
 .remainTime {
 	position:absolute;
 	top:25%;
-	left:60%;
-	width: 10%;
-	height: 10%;
-	
+	left:50%;
+	width: 45%;
+	height: 40%;
 	font-size:0.8em;
 	/*background-color: blue;*/
+/* 	border:1px solid black; */
 }
 
 #turnPointImg{/* 회차 이미지 */
-	width:60%;
+	width:50%;
 	height:80%;
 	margin-top:10%;
-	margin-left:10%;
+	margin-left:13%;
 }

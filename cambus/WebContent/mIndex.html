@@ -11,21 +11,13 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 
-<!-- 안드로이드 홈화면추가시 상단 주소창 제거 -->
-<meta name="mobile-web-app-capable" content="yes">
-<link rel="icon" href="/mobile/Image/favicon.ico">
-<!-- ios홈화면추가시 상단 주소창 제거 -->
-<meta name="apple-mobile-web-app-capable" content="yes">
 <!-- ico 아이콘-->
-<link rel="apple-touch-icon" href="/mobile/Image/favicon.ico">
-
-<!--모바일 스플래스 //아이폰용-->
-<link rel="apple-touch-startup-image" href="images/loading_yongin.png">
+<link rel="apple-touch-icon" href="images/ico/favicon.ico">
 
 
-<script src="js/jquery-1.12.4.js"
-	integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-	crossorigin="anonymous"></script>
+
+
+<script src="js/jquery-1.12.4.js"></script>
 
 <link rel="stylesheet" href="css/main.css">
 
@@ -38,14 +30,62 @@
 
 		<div id="headArea">
 			<div id="noticeArea">
-				<div id="noticeIconArea"><img src="images/icon_notice.png" style="position:relative;width:45%;height:90%;"></div>				<div id="noticeTextArea">[공지사항] 교통사고남 남남남남남남남남남남남남남남남남남남남</div>
+				<div id="noticeIconArea">
+					<img src="images/icon_notice.png" id="noticeIcon">
+				</div>
+				<div id="noticeTextArea">[공지사항] 교통사고남 발생 서남IC 정체 중</div>
 				<div class="clear"></div>
 			</div>
 		</div>
 
 
-		<div id="contents"></div>
-		<div id="footer"></div>
+		<div id="contents">
+			<div id="space1" class="bigBox">
+				<div class="inBox">
+					<div id="smallInBox1" class="smallInBox">
+						Have a nice day<br> At Yongin Univesity
+					</div>
+					<div id="smallInBox2" class="smallInBox">
+					27º
+					</div>
+				</div>
+
+			</div>
+			<div id="space2" class="box">
+				<img src="images/1-CAMBUS.png" />
+			</div>
+			<div id="space3" class="box">
+				<img src="images/2_blank.png" />
+			</div>
+			<div class="clear"></div>
+			<div id="space4" class="box">
+				<a href="timeline.html" target="_self"><img src="images/3-shuttlelocation.png" /></a>
+			</div>
+			<div id="space5" class="box">
+				<a href="http://m.gbis.go.kr/common/main.do?osInfoType=M" target="_self"><image src="images/4-buslocation.png" /></a>
+			</div>
+			<div id="space6" class="box">
+				<img src="images/5-taxiShare.png" />
+			</div>
+			<div class="clear"></div>
+			<div id="space7" class="box">
+				<img src="images/6-timeTable.png" />
+			</div>
+			<div id="space8" class="box">
+				<img src="images/7-timeTable_weekend.png" />
+			</div>
+			<div id="space9" class="box">
+				<img src="images/8-ad.png" />
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="footer">
+			<p id="copyRight">Copyright ⓒ All right reserved. Ybus Team.</p>
+		</div>
 	</div>
+
+
+
+
 </body>
 </html>
